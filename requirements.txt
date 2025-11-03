@@ -1,0 +1,10 @@
+langchain
+langchain-openai
+openai
+pandas
+openpyxl
+sqlalchemy
+pydantic
+python-dotenv
+faiss-cpu
+langchain-text-splitters

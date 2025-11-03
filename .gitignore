@@ -1,0 +1,52 @@
+# Python Sanal Ortamı
+# Bu klasör, sisteminize özel kütüphaneleri içerir ve ASLA paylaşılmamalıdır.
+/.venv/
+
+# Hassas Bilgiler
+# API Anahtarınızı içerir. Bu, en kritik dosyadır.
+/.env
+
+# Python Bytecode ve Cache
+# Çalıştırıldıkça otomatik oluşan geçici dosyalardır.
+**/__pycache__/
+*.pyc
+
+# Oluşturulan Veritabanı
+# Hem girdi çağrılarını hem de işlenmiş çıktıları içerir. Veridir, kod değil.
+*.db
+*.sqlite3
+/bank_calls.db
+
+# Log Dosyaları
+# Çalışma zamanı kayıtlarını içerir.
+/logs/
+*.log
+pipeline.log
+
+# Oluşturulan RAG Index'i
+# build_vector_store.py tarafından oluşturulan büyük index dosyaları.
+/data/faiss_index/
+
+
+# Veri Dosyaları
+data/*.py
+data/*.xlsx
+data/*.xls
+topic_hierarchy.json
+product_list.txt
+
+# IDE ve Editör Ayarları
+.vscode/
+.idea/
+# MacOS Sistem Dosyaları
+.DS_Store       
+Thumbs.db
+# Diğer Geçici Dosyalar
+*.swp
+*.bak
+*.tmp
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+# Test Çıktıları
+/test_outputs/
+/test_output_*.json
